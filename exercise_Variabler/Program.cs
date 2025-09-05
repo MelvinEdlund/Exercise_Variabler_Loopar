@@ -313,37 +313,37 @@
 
 
 //10.
-Console.WriteLine("Mata in höjd: ");
-int height = Int32.Parse(Console.ReadLine());
+//Console.WriteLine("Mata in höjd: ");
+//int height = Int32.Parse(Console.ReadLine());
 
-Console.WriteLine("Mata in bredd: ");
-int width = Int32.Parse(Console.ReadLine());
-
-
-string xWidth = string.Empty;
-
-for (int i = 1; i <= width; i++)
-{
-    xWidth += "X";
-}
+//Console.WriteLine("Mata in bredd: ");
+//int width = Int32.Parse(Console.ReadLine());
 
 
-string mellanWidth = string.Empty;
+//string xWidth = string.Empty;
 
-for (int i = 1; i <= width-2; i++)
-{
-    mellanWidth += " ";
-}
+//for (int i = 1; i <= width; i++)
+//{
+//    xWidth += "X";
+//}
 
 
-for (int i = 1; i <= height; i++)
-{
-    if(i == 1)
-    Console.WriteLine(xWidth);
-    else if(i < height)
-        Console.WriteLine("X" +mellanWidth +"X");
-    else Console.WriteLine(xWidth);
-}
+//string mellanWidth = string.Empty;
+
+//for (int i = 1; i <= width-2; i++)
+//{
+//    mellanWidth += " ";
+//}
+
+
+//for (int i = 1; i <= height; i++)
+//{
+//    if(i == 1)
+//    Console.WriteLine(xWidth);
+//    else if(i < height)
+//        Console.WriteLine("X" +mellanWidth +"X");
+//    else Console.WriteLine(xWidth);
+//}
 
 
 //  11.
@@ -364,3 +364,6 @@ for (int i = 1; i <= height; i++)
 //    addNumber += i.ToString();
 //    Console.WriteLine(addNumber);
 //}
+
+
+// 12.
