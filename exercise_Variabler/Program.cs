@@ -1,6 +1,6 @@
-﻿//  1.
+﻿//1.
 //Console.Write("Skriv ditt namn: ");
-//string namn = Console.ReadLine().ToLower();
+//string namn = Console.ReadLine();
 //Console.WriteLine($"Hej {namn}!");
 
 
@@ -28,13 +28,13 @@
 //}
 
 
-//  3.
+//3.
 //string password = "Svardfisk";
 //Console.Write("Lösenord: ");
 //string tryPass = Console.ReadLine();
 //Console.WriteLine(tryPass == password ? "Rätt lösenord!" : "Fel lösenord!");
 
-//  4.
+//4.
 //Console.Write("Skriv ett tal: ");
 //if (int.TryParse(Console.ReadLine(), out int num1))
 //{
@@ -57,7 +57,7 @@
 //}
 
 
-//  5.
+//5.
 //Console.Write("Skriv in ett tal: ");
 //if (double.TryParse(Console.ReadLine(), out double tal))
 //{
@@ -67,7 +67,7 @@
 //else Console.WriteLine("Fel: Du skrev inte in ett tal..");
 
 
-//  6.
+//6.
 //Console.Write("Första talet: ");
 //double talEtt = double.Parse(Console.ReadLine());
 
@@ -97,7 +97,7 @@
 //}
 
 
-//  7.
+//7.
 //double summa = 0;
 //int antal = 0;
 //Console.Write("Skriv in ett tal: ");
@@ -115,10 +115,10 @@
 
 
 
-////// loops ///////
+//// loops ///////
 
 
-//  1.
+//1.
 //int i = 20;
 //while (i <= 30)
 //{
@@ -127,9 +127,9 @@
 //}
 
 
-//  2.
+//2.
 //int i = 0;
-//while (i<= 30)
+//while (i <= 30)
 //{
 //    Console.WriteLine(i);
 //    i++;
@@ -137,15 +137,15 @@
 //}
 
 
-//  3.
+//3.
 //int i = 0;
 //while (i <= 30)
 //{
-// if(i % 3 == 0 && i != 0)
+//    if (i % 3 == 0 && i != 0)
 //    {
 //        Console.WriteLine("Hej");
 //    }
-// else
+//    else
 //    {
 //        Console.WriteLine(i);
 //    }
@@ -153,12 +153,12 @@
 //}
 
 
-//  4.
+//4.
 
 
 //int i = 1;
 //while (true)
-//{ 
+//{
 //    Console.Write("Skriv in ett tal: ");
 //    if (double.TryParse(Console.ReadLine(), out double num1))
 //    {
@@ -178,7 +178,7 @@
 //}
 
 
-//  5.
+//5.
 //int i = 0;
 //int sum = 0;
 //while (i <= 1000)
@@ -191,7 +191,7 @@
 //Console.WriteLine(sum);
 
 
-//  6.
+//6.
 //int i = 1;
 //BigInteger sum = 1;
 
@@ -205,7 +205,7 @@
 //}
 
 
-//  7.
+//7.
 //Console.Write("Mata in höjd: ");
 //int höjd = Int32.Parse(Console.ReadLine());
 //Console.Write("Mata in bredd: ");
@@ -228,7 +228,7 @@
 //}
 
 
-//  8.
+//8.
 //Console.Write("Mata in höjd: ");
 //int höjd = Int32.Parse(Console.ReadLine());
 //Console.Write("Mata in bredd: ");
@@ -259,7 +259,7 @@
 //}
 
 
-//  9.
+//9.
 //Console.Write("Mata in höjd: ");
 //int höjd = Int32.Parse(Console.ReadLine());
 //Console.Write("Mata in bredd: ");
@@ -312,8 +312,38 @@
 //}
 
 
-//  10.
+//10.
+Console.WriteLine("Mata in höjd: ");
+int height = Int32.Parse(Console.ReadLine());
 
+Console.WriteLine("Mata in bredd: ");
+int width = Int32.Parse(Console.ReadLine());
+
+
+string xWidth = string.Empty;
+
+for (int i = 1; i <= width; i++)
+{
+    xWidth += "X";
+}
+
+
+string mellanWidth = string.Empty;
+
+for (int i = 1; i <= width-2; i++)
+{
+    mellanWidth += " ";
+}
+
+
+for (int i = 1; i <= height; i++)
+{
+    if(i == 1)
+    Console.WriteLine(xWidth);
+    else if(i < height)
+        Console.WriteLine("X" +mellanWidth +"X");
+    else Console.WriteLine(xWidth);
+}
 
 
 //  11.
